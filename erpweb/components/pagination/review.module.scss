@@ -1,0 +1,23 @@
+@import './styles/color.scss';
+
+.page-arrow {
+  width: 18px;
+  height: 100%;
+  margin: 0 30px;
+  // padding: 5px;
+  &:hover {
+    cursor: pointer;
+  }
+  img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

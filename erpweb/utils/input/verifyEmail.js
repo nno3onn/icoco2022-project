@@ -1,0 +1,7 @@
+/* eslint-disable operator-linebreak */
+const email =
+  /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+
+const verifyEmail = (value) => email.test(value);
+
+export default verifyEmail;

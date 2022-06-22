@@ -1,0 +1,47 @@
+@import '/styles/color.scss';
+
+.container {
+  width: 891px;
+}
+
+.header {
+  margin-bottom: 72px;
+  font-weight: bold;
+  font-size: 20px;
+  color: $color-paragraph-black;
+}
+
+.label {
+  color: $color-button;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  .checkbox {
+    margin-right: 32px;
+  }
+}
+
+.contents-wrapper {
+  margin-bottom: 48px;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.keyword-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  width: 70%;
+
+  div {
+    flex: 1;
+  }
+}

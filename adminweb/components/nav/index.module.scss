@@ -1,0 +1,69 @@
+@import '/styles/color.scss';
+
+$color-logo: #7462bd;
+
+.container {
+  width: 180px;
+  height: 100vh;
+  position: fixed;
+  z-index: 999;
+  background: $color-grey-3;
+  top: 0;
+  left: 0;
+  font-size: 14px;
+}
+
+.logo-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $color-logo;
+  height: 56px;
+  .logo {
+    width: 86px;
+    height: 20px;
+  }
+}
+
+.contents-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - 56px);
+}
+
+.contents-top {
+  padding-top: 10px;
+  .nav-tab,
+  .nav-tab-active {
+    width: 100%;
+    height: 46px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 16px;
+    img {
+      margin-right: 16px;
+      width: 24px;
+      height: 24px;
+    }
+    div {
+      color: $color-white;
+    }
+  }
+  .nav-tab {
+    background: $color-grey-3;
+    &:hover {
+      background: $color-grey-2;
+    }
+  }
+  .nav-tab-active {
+    background: $color-grey-2;
+  }
+}
+
+.contents-bottom {
+  padding-bottom: 64px;
+  color: $color-light-grey-6;
+}

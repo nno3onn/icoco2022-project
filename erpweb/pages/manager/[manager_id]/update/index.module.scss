@@ -1,0 +1,276 @@
+@import '/styles/color.scss';
+
+.container {
+  width: 588px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 84px;
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  left: -129px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.divided {
+  margin-bottom: 48px;
+  width: 100%;
+  border-bottom: 1px solid $color-light-grey-3;
+}
+
+.divided2 {
+  margin-top: 8px;
+  margin-bottom: 48px;
+  width: 100%;
+  border-bottom: 1px solid $color-light-grey-3;
+}
+.table-wrapper {
+  padding-bottom: 48px;
+}
+.thumbnail-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+
+.thumbnail {
+  width: 180px;
+  height: 180px;
+  border-radius: 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid $color-light-grey-5;
+}
+
+.label {
+  font-size: 14px;
+  line-height: 1;
+  color: $color-grey-2;
+  margin-bottom: 8px;
+}
+
+.content-label {
+  font-size: 16px;
+  line-height: 1;
+  margin-bottom: 32px;
+  font-weight: bold;
+  color: $color-grey-2;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  height: 46px;
+}
+
+.input-list-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-bottom: 48px;
+
+  .bar {
+    width: 8px;
+    height: 46px;
+    margin: 0 8px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.input-wrapper {
+  margin-bottom: 48px;
+}
+
+.dropdown-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-bottom: 48px;
+
+  .dropdown-wrapper-1 {
+    width: 102px;
+    margin-right: 24px;
+  }
+
+  .dropdown-wrapper {
+    width: 78px;
+    margin-right: 24px;
+  }
+}
+
+.dropdown-list-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 60px;
+}
+
+.dropdown-wrapper-front {
+  margin-right: 24px;
+  width: 160px;
+}
+
+.dropdown-wrapper-center {
+  margin-right: 24px;
+  width: 122px;
+}
+
+.dropdown-wrapper-back {
+  width: 180px;
+  margin-right: 36px;
+}
+
+.area-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+
+  .dropdown-wrapper-front,
+  .dropdown-wrapper-center,
+  .dropdown-wrapper-back {
+    background: $color-light-grey-1;
+    border: 1px solid $color-light-grey-5;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1;
+    color: $color-grey-1;
+    height: 46px;
+  }
+
+  .button {
+    cursor: pointer;
+    width: 42px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1;
+    color: $color-grey-1;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.td-top {
+  height: 46px;
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  line-height: 1;
+  border-top: 1px solid $color-light-grey-4;
+  border-bottom: 1px solid $color-light-grey-4;
+}
+
+.td {
+  height: 46px;
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  line-height: 1;
+  border-bottom: 1px solid $color-light-grey-4;
+}
+
+.td-label {
+  width: 183px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $color-light-grey-3;
+  color: $color-grey-2;
+}
+
+.value {
+  width: calc(100% - 183px);
+  color: $color-paragraph-black;
+  height: 46px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+
+  .text {
+    padding-left: 24px;
+  }
+
+  .checkbox-wrapper {
+    flex: 1;
+    padding-left: 64px;
+  }
+
+  .checkbox-wrapper2 {
+    width: 136px;
+    flex: none;
+    padding-left: 24px;
+  }
+}
+
+.td-extend {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  line-height: 1;
+  border-top: 1px solid $color-light-grey-4;
+  border-bottom: 1px solid $color-light-grey-4;
+
+  .td-label {
+    text-align: center;
+    line-height: 26px;
+  }
+}
+
+.value-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .value {
+    width: 405px;
+    height: 46px;
+    border-bottom: 1px solid $color-light-grey-4;
+    flex: none;
+    .checkbox-wrapper2 {
+      width: 136px;
+      flex: none;
+      padding-left: 24px;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.cert-wrapper {
+  margin-bottom: 36px;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}

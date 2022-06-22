@@ -1,0 +1,39 @@
+@import '/styles/color.scss';
+
+.table-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  .content {
+    min-height: 78px;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: $color-white;
+    margin-bottom: 20px;
+    padding: 0 32px;
+    transition: 0.3s;
+    &:hover {
+      cursor: pointer;
+      box-shadow: $color-box-shadow;
+    }
+    .wait {
+      color: $color-orange;
+      font-weight: bold;
+    }
+  }
+}
+
+.f1 {
+  flex: 1;
+}
+
+.f2 {
+  flex: 2;
+}
+
+.f3 {
+  flex: 3;
+}

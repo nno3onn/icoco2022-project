@@ -1,0 +1,51 @@
+@import '/styles/color.scss';
+
+.container {
+  width: 996px;
+}
+
+.header {
+  margin-bottom: 32px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1;
+  color: $color-paragraph-black;
+}
+
+.button-wrapper {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 99;
+}
+
+.table-wrapper {
+  width: 100%;
+
+  .table-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px 48px 16px 48px;
+    border-top: 1px solid $color-light-grey-3;
+    font-size: 14px;
+    color: $color-grey-2;
+
+    .f1 {
+      flex: 1;
+      text-align: center;
+    }
+    .f7 {
+      flex: 7;
+      padding-left: 50px;
+    }
+    .f2 {
+      flex: 1.7;
+      text-align: center;
+    }
+  }
+}
+
+.notice-margin {
+  margin-bottom: 16px;
+}

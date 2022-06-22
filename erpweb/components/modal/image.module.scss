@@ -1,0 +1,40 @@
+@import '/styles/color.scss';
+
+.container {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $color-modal-background;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-wrapper {
+  border-radius: 12px;
+  padding: 58px 20px 32px 20px;
+  background-color: $color-white;
+  text-align: center;
+
+  .modal-icon {
+    padding-bottom: 24px;
+  }
+
+  .text {
+    margin-bottom: 56px;
+    font-size: 14px;
+    color: $color-paragraph-black;
+  }
+
+  .button-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 384px;
+    height: 46px;
+  }
+}

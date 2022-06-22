@@ -1,0 +1,40 @@
+@import '/styles/color.scss';
+
+.cost,
+.dispatch,
+.refund {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  padding: 8px 14px;
+  transition: 0.3s;
+  margin-right: 10px;
+  &:hover {
+    color: $color-white;
+  }
+}
+
+.cost {
+  color: #23b26b;
+  background-color: rgba(43, 217, 130, 0.1);
+  &:hover {
+    background-color: #23b26b;
+  }
+}
+
+.dispatch {
+  color: #00afbf;
+  background-color: rgba(0, 175, 191, 0.1);
+  &:hover {
+    background-color: #00afbf;
+  }
+}
+
+.refund {
+  color: $color-warning;
+  background-color: rgba(217, 75, 75, 0.1);
+  &:hover {
+    color: $color-white;
+    background-color: $color-warning;
+  }
+}

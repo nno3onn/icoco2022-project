@@ -1,0 +1,46 @@
+@import '/styles/color.scss';
+
+.container {
+  width: 996px;
+}
+
+.header {
+  color: $color-paragraph-black;
+  margin-bottom: 32px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.divided {
+  margin: 24px 0;
+  border-bottom: 1px solid $color-light-grey-3;
+}
+
+.filter-section {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 28px;
+
+  .filter-wrapper {
+    margin-right: 20px;
+  }
+}
+
+.list-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.event-center {
+  margin: 0 36px 40px 36px;
+}
+.event-margin {
+  margin-bottom: 40px;
+}
+
+.button-wrapper {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 99;
+}

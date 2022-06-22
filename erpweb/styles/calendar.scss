@@ -1,0 +1,115 @@
+@import './color.scss';
+
+.fc-media-screen {
+  background-color: $color-white;
+  font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+  padding: 10px;
+  width: 500px;
+
+  @media (max-width: 720px) {
+    width: 100vw;
+    padding: 0;
+  }
+}
+
+.fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
+  min-height: 0 !important;
+  margin-bottom: 4px !important;
+}
+
+.fc .fc-toolbar.fc-header-toolbar {
+  margin: 0px;
+
+  @media (max-width: 720px) {
+    font-size: 16px !important;
+  }
+}
+
+.fc-col-header {
+  @media (max-width: 720px) {
+    width: 100% !important;
+  }
+}
+
+.fc .fc-daygrid-body,
+.fc .fc-daygrid-body table {
+  @media (max-width: 720px) {
+    width: 100% !important;
+    font-size: 1.1em;
+  }
+}
+
+.fc .fc-button-primary {
+  background-color: transparent;
+  color: $color-calendar-arrow;
+  border-color: $color-calendar-arrow;
+  border-radius: 100%;
+  font-size: 12px;
+  padding: 9px;
+  width: 40px;
+  height: 40px;
+  margin: 30px;
+
+  @media (max-width: 720px) {
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+  }
+}
+
+.fc-view-harness {
+  .fc-col-header-cell {
+    border: none;
+    padding-bottom: 10px;
+  }
+
+  @media (max-width: 720px) {
+    font-size: 14px;
+  }
+
+  .fc-day-today {
+    background-color: transparent !important;
+  }
+
+  .fc-day-sat {
+    color: $color-calendar-sat;
+    .fc-event-title {
+      word-wrap: break-word;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+  .fc-day-sun {
+    color: $color-calendar-sun;
+  }
+}
+
+.fc-daygrid-day-number {
+  line-height: 35px;
+  font-weight: bold;
+
+  @media (max-width: 720px) {
+    font-size: 15px;
+    line-height: 5vw;
+    padding: 10px !important;
+  }
+}
+
+.fc-theme-standard .fc-scrollgrid {
+  border: none;
+}
+.fc-theme-standard td,
+.fc-theme-standard th {
+  border: none;
+}
+
+.fc .fc-daygrid-day-top {
+  flex-direction: column;
+  text-align: center;
+}
+
+.fc-h-event .fc-event-title {
+  font-weight: 700;
+  overflow: visible;
+}

@@ -1,0 +1,55 @@
+@import '/styles/color.scss';
+
+.container {
+  width: 100%;
+  position: relative;
+}
+
+.dropdown-default {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-light-grey-1;
+  border: 1px solid $color-light-grey-5;
+  padding: 14px 15px;
+  font-size: 14px;
+  color: $color-grey-1;
+  font-weight: normal;
+  text-align: left;
+  img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.dropdown-list-wrapper {
+  width: 100%;
+  position: absolute;
+  top: 46px;
+  max-height: 0px;
+  overflow-y: scroll;
+  border-top-width: 0px;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.dropdown-item {
+  background-color: #f4f5f7;
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 14px;
+  color: $color-grey-1;
+  font-weight: normal;
+  transition: 0.3s;
+  text-align: left;
+  border: 1px solid $color-light-grey-5;
+  border-bottom: none;
+  &:hover {
+    background-color: #ebecf0;
+  }
+  &:last-child {
+    border-bottom: 1px solid $color-light-grey-5;
+  }
+}

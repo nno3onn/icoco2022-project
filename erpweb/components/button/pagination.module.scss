@@ -1,0 +1,13 @@
+@import './styles/color.scss';
+
+.active,
+.non-active {
+  font-size: 14px;
+  padding: 0 14px;
+  color: $color-paragraph-black;
+}
+
+.active {
+  font-weight: bold;
+  color: $color-primary;
+}

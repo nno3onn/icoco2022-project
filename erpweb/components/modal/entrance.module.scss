@@ -1,0 +1,58 @@
+@import '/styles/color.scss';
+
+.container {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $color-modal-background;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper {
+  width: 588px;
+  height: 294px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-white;
+  position: relative;
+  overflow-y: auto;
+  .close {
+    border: none;
+    position: absolute;
+    top: 34px;
+    right: 34px;
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.header {
+  margin-bottom: 36px;
+  font-size: 14px;
+  line-height: 1;
+  color: $color-paragraph-black;
+}
+
+.label {
+  font-size: 12px;
+  line-height: 1;
+  color: $color-grey-2;
+  margin-bottom: 8px;
+}
+
+.number {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  color: $color-paragraph-black;
+}

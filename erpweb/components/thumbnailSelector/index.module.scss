@@ -1,0 +1,49 @@
+@import '/styles/color.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thumbnail-file {
+  display: none;
+}
+
+.thumbnail-label {
+  position: relative;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  color: $color-grey-1;
+  text-align: center;
+}
+
+.thumbnail-default {
+  width: 180px;
+  height: 180px;
+  border-radius: 12px;
+  background-color: $color-light-grey-4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // text-align: center;
+  padding: 0 27px;
+  margin-bottom: 32px;
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.thumbnail-bg {
+  width: 180px;
+  height: 180px;
+  border-radius: 12px;
+  margin-bottom: 32px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid $color-light-grey-4;
+}

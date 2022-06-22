@@ -1,0 +1,37 @@
+@import '/styles/color.scss';
+
+.arrow {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.container {
+  width: 750px;
+  margin-left: 84px;
+  margin-right: 84px;
+
+  display: flex;
+  flex-direction: column;
+  padding: 0 84px;
+
+  .title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1;
+    color: $color-paragraph-black;
+    margin-bottom: 32px;
+  }
+
+  .wait {
+    color: $color-orange;
+    font-weight: bold;
+  }
+
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}

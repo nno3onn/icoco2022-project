@@ -1,0 +1,52 @@
+@import '/styles/color.scss';
+
+.container {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 116px;
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  left: -129px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1;
+  color: $color-paragraph-black;
+  margin-bottom: 30px;
+}
+
+.desc {
+  font-size: 14px;
+  line-height: 1;
+  color: $color-paragraph-black;
+  margin-bottom: 30px;
+}
+
+.input-wrapper {
+  // margin-bottom: 36px;
+  margin-bottom: 10px;
+}
+
+.action-section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  height: 46px;
+
+  margin-top: 20px;
+}
+
+.button-margin {
+  margin-right: 24px;
+}

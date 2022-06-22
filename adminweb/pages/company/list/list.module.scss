@@ -1,0 +1,55 @@
+@import '/styles/color.scss';
+
+.container {
+  width: 996px;
+  color: $color-paragraph-black;
+}
+
+.header {
+  margin-bottom: 32px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1;
+}
+.search-wrapper {
+  width: 563px;
+  margin-bottom: 42px;
+}
+
+.table-wrapper {
+  width: 100%;
+  border-top: 1px solid $color-light-grey-3;
+
+  .f1 {
+    flex: 1;
+    text-align: center;
+  }
+  .f15 {
+    flex: 1.5;
+  }
+  .f3 {
+    flex: 3;
+  }
+}
+
+.table-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 24px 48px 16px 48px;
+  div {
+    color: $color-grey-2;
+    font-size: 14px;
+  }
+}
+
+.company-wrapper {
+  margin-bottom: 20px;
+}
+
+.button-wrapper {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 99;
+}

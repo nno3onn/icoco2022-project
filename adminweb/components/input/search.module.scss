@@ -1,0 +1,33 @@
+@import '../../styles/color.scss';
+
+.container {
+  width: 100%;
+  height: 46px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $color-light-grey-3;
+  border: 1px solid transparent;
+
+  input {
+    flex: 1;
+    height: 46px;
+    font-size: 14px;
+    padding: 0 16px;
+    color: $color-paragraph-black;
+    transition: 0.3s;
+    &:focus {
+      border: 1px solid $color-input-border-hover;
+    }
+    &::placeholder {
+      color: $color-grey-1;
+    }
+  }
+
+  img {
+    margin: 0 15px;
+    width: 24px;
+    height: 24px;
+  }
+}

@@ -1,0 +1,97 @@
+@import '/styles/color.scss';
+
+.global-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f8f7fc;
+}
+
+.container {
+  width: 588px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 121px;
+  height: 30px;
+  margin-bottom: 36px;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1;
+  color: $color-paragraph-black;
+  margin-bottom: 60px;
+}
+
+.dropdown-section {
+}
+
+.dropdown-list-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 60px;
+}
+
+.dropdown-wrapper-front {
+  margin-right: 24px;
+  width: 160px;
+}
+
+.dropdown-wrapper-center {
+  margin-right: 24px;
+  width: 122px;
+}
+
+.dropdown-wrapper-back {
+  width: 180px;
+  margin-right: 36px;
+}
+
+.content-label {
+  font-size: 14px;
+  color: $color-grey-2;
+  margin-bottom: 8px;
+}
+
+.area-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+
+  .dropdown-wrapper-front,
+  .dropdown-wrapper-center,
+  .dropdown-wrapper-back {
+    background: $color-light-grey-1;
+    border: 1px solid $color-light-grey-5;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1;
+    color: $color-grey-1;
+    height: 46px;
+  }
+
+  .button {
+    cursor: pointer;
+    width: 42px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1;
+    color: $color-grey-1;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

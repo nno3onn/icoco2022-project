@@ -1,0 +1,30 @@
+@import '/styles/color.scss';
+
+.container {
+  width: 100%;
+
+  table,
+  th,
+  td {
+    border: 1px solid $color-light-grey-6;
+    border-collapse: collapse;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  th {
+    background-color: $color-light-grey-4;
+  }
+}
+
+.voucher-input-wrapper {
+  width: 85px;
+}
+
+.normal-input-wrapper {
+  width: 170px;
+}

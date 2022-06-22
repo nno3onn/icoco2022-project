@@ -1,0 +1,71 @@
+@import '/styles/color.scss';
+
+.divided {
+  width: 100%;
+  margin-bottom: 24px;
+  border-bottom: 1px dashed $color-light-grey-7;
+}
+
+.container {
+  padding: 24px;
+  background-color: $color-light-grey-1;
+  display: flex;
+  flex-direction: column;
+  width: 432px;
+  // height: 356px;
+}
+
+.receipt-wrapper-loading {
+  width: 432px;
+  height: 356px;
+}
+
+.row,
+.action-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  div {
+    font-size: 14px;
+    line-height: 1;
+  }
+}
+
+.row {
+  margin-bottom: 24px;
+  .value {
+  }
+  span {
+    margin-left: 10px;
+    color: $color-primary;
+  }
+}
+
+.action-row {
+  margin-bottom: 18px;
+  .label-wrapper {
+    display: flex;
+    flex-direction: row;
+
+    .label {
+      font-weight: bold;
+    }
+
+    .success {
+      margin-left: 8px;
+      color: $color-primary;
+    }
+
+    .fail {
+      margin-left: 8px;
+      color: $color-grey-2;
+    }
+  }
+
+  .value {
+    font-weight: bold;
+  }
+}

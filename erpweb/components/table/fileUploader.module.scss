@@ -1,0 +1,103 @@
+@import '/styles/color.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .table {
+    display: flex;
+    flex-direction: row;
+    height: 46px;
+    width: 100%;
+    border-top: 1px solid $color-light-grey-4;
+    border-bottom: 1px solid $color-light-grey-4;
+    margin-bottom: 16px;
+  }
+
+  .label {
+    width: 180px;
+    height: 100%;
+    background: $color-light-grey-3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1;
+    color: $color-grey-2;
+  }
+
+  .value {
+    width: 408px;
+    height: 100%;
+    background: $color-light-grey-2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1;
+    color: $color-paragraph-black;
+
+    .upload-label {
+      width: 319px;
+      padding: 0 24px;
+      text-decoration-line: underline;
+      font-size: 14px;
+      line-height: 1.4;
+      color: $color-paragraph-black;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .upload-button {
+      width: 70px;
+      margin-right: 24px;
+      label {
+        cursor: pointer;
+        line-height: 1;
+        color: $color-grey-1;
+        font-size: 14px;
+        padding: 16px 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        img {
+          width: 20px;
+          height: 20px;
+          margin-right: 6px;
+        }
+
+        div {
+          font-size: 14px;
+          line-height: 1;
+          color: $color-grey-1;
+        }
+
+        &:hover {
+          text-decoration-line: underline;
+        }
+      }
+
+      input[type='file'] {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+      }
+    }
+  }
+
+  .desc {
+    font-size: 12px;
+    line-height: 1.67;
+    color: $color-grey-2;
+    display: flex;
+    flex-direction: column;
+  }
+}

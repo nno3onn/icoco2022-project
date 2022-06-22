@@ -1,0 +1,151 @@
+@import '/styles/color.scss';
+
+.board-wrapper {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.divided {
+  width: 100%;
+  border-bottom: 1px solid $color-light-grey-3;
+  margin: 36px 0;
+}
+
+.board-info-section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.board-info-left-loading {
+  margin-right: 24px;
+}
+
+.board-info-right {
+  width: 792px;
+}
+
+.board-info-left {
+  width: 384px;
+  height: 484px;
+
+  background: $color-light-grey-1;
+  margin-right: 23px;
+  padding: 36px 36px 31px 36px;
+
+  .thumbnail-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    .thumbnail {
+      width: 102px;
+      height: 102px;
+      border-radius: 12px;
+      margin-bottom: 18px;
+      box-shadow: 0px 12px 36px -8px rgba(80, 58, 169, 0.45);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .thumbnail-default {
+      width: 102px;
+      height: 102px;
+      border-radius: 12px;
+      margin-bottom: 18px;
+      border: 1px solid $color-light-grey-5;
+    }
+    .label {
+      font-weight: bold;
+      font-size: 16px;
+      color: $color-paragraph-black;
+    }
+  }
+
+  .info-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 36px;
+    .label {
+      font-size: 14px;
+      color: $color-grey-2;
+      margin-bottom: 16px;
+    }
+    .value {
+      font-size: 14px;
+    }
+  }
+}
+
+.board-info-right-loading {
+  .board-info-inner-loading {
+    margin-bottom: 24px;
+  }
+}
+
+.board-revenue-inner {
+  width: 100%;
+  background: $color-light-grey-1;
+  padding: 24px 36px;
+  margin-bottom: 24px;
+
+  .label-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+    .label {
+      color: $color-grey-2;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .unit {
+      font-size: 12px;
+      line-height: 1;
+      color: $color-grey-3;
+    }
+
+    .color1 {
+      background: #9c8ae5;
+      border-radius: 4px;
+      width: 12px;
+      height: 12px;
+      margin-right: 4px;
+    }
+  }
+}
+
+.chart-label-section {
+  display: flex;
+  flex-direction: row;
+
+  .chart-label,
+  .chart-unit-label {
+    font-size: 12px;
+    color: $color-grey-3;
+  }
+
+  .chart-unit-label {
+    margin-left: 12px;
+    padding-left: 12px;
+    border-left: 1px solid $color-grey-3;
+  }
+}
+
+.costDiff {
+  display: flex;
+  align-items: baseline;
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+  span {
+    font-size: 16px;
+    font-weight: normal;
+  }
+}

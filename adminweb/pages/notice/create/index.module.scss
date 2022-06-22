@@ -1,0 +1,41 @@
+@import '/styles/color.scss';
+
+.container {
+  width: 582px;
+}
+
+.header {
+  margin-bottom: 72px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1;
+  color: $color-paragraph-black;
+}
+
+.label {
+  font-size: 14px;
+  color: #605c73;
+  margin-bottom: 8px;
+  font-weight: bold;
+
+  span {
+    margin-left: 10px;
+    font-weight: normal;
+    color: $color-primary;
+  }
+}
+
+.input-wrapper {
+  width: 100%;
+  margin-bottom: 36px;
+  textarea {
+    &::placeholder {
+      color: $color-grey-1;
+    }
+  }
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+}

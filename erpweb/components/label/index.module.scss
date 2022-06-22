@@ -1,0 +1,26 @@
+@import '/styles/color.scss';
+
+.container {
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 38px;
+  padding: 12px 16px;
+  border: 1px solid $color-light-grey-4;
+  background-color: $color-light-grey-2;
+  div {
+    font-size: 14px;
+    line-height: 1;
+  }
+}
+
+.title {
+  margin-right: 4px;
+  color: $color-paragraph-black;
+  font-weight: 500;
+}
+
+.desc {
+  color: $color-grey-2;
+}

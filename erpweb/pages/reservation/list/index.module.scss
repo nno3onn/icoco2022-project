@@ -1,0 +1,62 @@
+@import '/styles/color.scss';
+
+.container {
+  width: 996px;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1;
+  color: $color-paragraph-black;
+  margin-bottom: 32px;
+}
+
+.input-wrapper {
+  width: 563px;
+  position: relative;
+
+  .icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: calc(50% - 12px);
+    right: 16px;
+  }
+  img:hover {
+    cursor: pointer;
+  }
+}
+
+.divided {
+  margin: 24px 0;
+  border-bottom: 1px solid $color-light-grey-3;
+}
+
+.divided2 {
+  margin: 40px 0 24px 0;
+  border-bottom: 1px solid $color-light-grey-3;
+}
+
+.filter-section {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 28px;
+
+  .filter-wrapper {
+    margin-right: 20px;
+  }
+}
+
+.button-wrapper {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 99;
+}
+
+.loading {
+  text-align: center;
+}

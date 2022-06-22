@@ -1,0 +1,43 @@
+@import './styles/color.scss';
+
+.review {
+  border-radius: 10px;
+  background-color: $color-white;
+  min-height: 150px;
+  margin-bottom: 16px;
+  padding: 30px;
+  font-size: 14px;
+  img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .review-name {
+    margin-bottom: 12px;
+    font-weight: bold;
+  }
+  .review-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  .review-rate {
+    margin-right: 12px;
+  }
+  .review-date {
+    color: $color-light-grey-7;
+  }
+  .review-specialty {
+    margin-bottom: 28px;
+    color: $color-primary;
+  }
+  .review-contents {
+    line-height: 24px;
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+  .review-thumbnail {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

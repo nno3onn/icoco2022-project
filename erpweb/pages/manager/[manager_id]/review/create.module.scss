@@ -1,0 +1,53 @@
+@import '/styles/color.scss';
+
+.border {
+  background-color: #ecebf0;
+  width: 100%;
+  height: 1px;
+  margin: 48px 0;
+}
+
+.container {
+  width: 780px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 84px;
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1;
+  color: $color-paragraph-black;
+}
+
+.content-wrapper {
+  margin-bottom: 48px;
+}
+
+.label {
+  font-size: 14px;
+  color: $color-grey-2;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.multi-checkbox-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 12px;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

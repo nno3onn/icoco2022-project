@@ -1,0 +1,24 @@
+@import '/styles/color.scss';
+
+.textarea-wrapper {
+  width: 100%;
+  padding: 16px;
+  background-color: $color-light-grey-3;
+  border: 1px solid transparent;
+  resize: none;
+  font-size: 14px;
+  line-height: 1;
+  color: $color-paragraph-black;
+  line-height: 1.5;
+  transition: 0.3s;
+  cursor: text;
+
+  &:focus {
+    border: 1px solid $color-input-border-hover;
+  }
+  &::placeholder {
+    font-size: 14px;
+    line-height: 1;
+    color: #bbb;
+  }
+}

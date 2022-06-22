@@ -1,0 +1,74 @@
+@import '/styles/color.scss';
+
+.outer-wrapper {
+  margin-bottom: 48px;
+  width: 933px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.img-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-right: 36px;
+  border: 1px solid $color-light-grey-3;
+}
+
+.img-section {
+  position: relative;
+  width: 273px;
+  height: 273px;
+  &:hover {
+    cursor: pointer;
+    .img-delete-label {
+      opacity: 1;
+    }
+  }
+
+  .img-bg {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .img-delete-label {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s;
+    background: $color-modal-background;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    color: $color-white;
+    font-size: 14px;
+  }
+}
+
+.img-add-label {
+  width: 273px;
+  height: 273px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: $thumbnail-upload-border;
+  text-align: center;
+  cursor: pointer;
+  img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 12px;
+  }
+  div {
+    font-size: 12px;
+    line-height: 2;
+    color: $color-grey-1;
+  }
+}

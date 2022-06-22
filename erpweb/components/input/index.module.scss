@@ -1,0 +1,33 @@
+@import '/styles/color.scss';
+
+$color-input-border: #ecebf2;
+$color-input-border-hover: #5635db;
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 14px;
+  color: $color-grey-2;
+  margin-bottom: 8px;
+}
+
+.input {
+  width: 100%;
+  background-color: $color-light-grey-3;
+  border: 1px solid $color-input-border;
+  min-height: 46px;
+  font-size: 14px;
+  padding: 12px;
+  color: $color-paragraph-black;
+  transition: 0.3s;
+  &:focus {
+    border: 1px solid $color-input-border-hover;
+  }
+  &::placeholder {
+    color: $color-grey-1;
+  }
+}

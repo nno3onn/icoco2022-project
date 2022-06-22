@@ -1,0 +1,10 @@
+@import '/styles/color.scss';
+
+.container {
+  color: $color-paragraph-black;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: pre-line;
+  word-break: break-all;
+}

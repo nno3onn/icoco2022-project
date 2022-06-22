@@ -1,0 +1,12 @@
+@import '/styles/color.scss';
+
+.page {
+  background-color: $color-light-grey-2;
+  margin-left: 180px;
+  padding: 80px 30px;
+  flex: 1;
+  min-width: max-content;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}

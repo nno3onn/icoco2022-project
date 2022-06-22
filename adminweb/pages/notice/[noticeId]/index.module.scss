@@ -1,0 +1,84 @@
+@import '/styles/color.scss';
+
+$color-title: $color-button;
+$color-subtitle: #908ba6;
+
+.arrow {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.container {
+  width: 750px;
+  margin-left: 84px;
+  margin-right: 84px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -80px;
+  margin-bottom: -80px;
+  padding-top: 90px;
+  min-height: 100vh;
+  background-color: $color-white;
+}
+
+.notice-wrapper {
+  width: 582px;
+}
+
+.title {
+  color: $color-title;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1;
+  margin-bottom: 36px;
+}
+
+.subtitle {
+  color: $color-subtitle;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: normal;
+  margin-bottom: 16px;
+}
+
+.date {
+  color: $color-subtitle;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: normal;
+}
+
+.divided {
+  margin: 36px 0;
+  width: 100%;
+  border-bottom: 1px solid $color-light-grey-3;
+}
+
+.thumbnail-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 365px;
+  min-height: 365px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: cover;
+  border-radius: 12px;
+  border: 1px solid $color-light-grey-5;
+  margin-bottom: 24px;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

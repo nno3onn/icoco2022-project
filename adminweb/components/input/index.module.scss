@@ -1,0 +1,31 @@
+@import '../../styles/color.scss';
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.label {
+  color: $color-label;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.input {
+  width: 100%;
+  background-color: $color-light-grey-3;
+  border: 1px solid transparent;
+  min-height: 46px;
+  height: 100%;
+  padding: 12px;
+  color: $color-paragraph-black;
+  transition: 0.3s;
+  &:focus {
+    border: 1px solid $color-input-border-hover;
+  }
+  &::placeholder {
+    color: $color-grey-1;
+  }
+}

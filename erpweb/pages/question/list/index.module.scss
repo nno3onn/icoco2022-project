@@ -1,0 +1,54 @@
+@import '/styles/color.scss';
+
+.container {
+  width: 996px;
+}
+
+.header {
+  margin-bottom: 32px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1;
+  color: $color-paragraph-black;
+}
+
+.table-wrapper {
+  width: 100%;
+}
+
+.filter-section {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+
+  .filter-wrapper {
+    margin-right: 20px;
+  }
+}
+
+.table-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 24px 32px 16px 32px;
+  border-top: 1px solid $color-light-grey-3;
+  text-align: center;
+
+  div {
+    font-size: 14px;
+    line-height: 1;
+    color: $color-grey-2;
+  }
+}
+
+.f1 {
+  flex: 1;
+}
+
+.f2 {
+  flex: 2;
+}
+
+.f3 {
+  flex: 3;
+}

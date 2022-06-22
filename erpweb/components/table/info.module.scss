@@ -1,0 +1,59 @@
+@import '/styles/color.scss';
+
+.table-wrapper {
+  .td-top {
+    min-height: 46px;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    line-height: 1;
+    border-top: 1px solid $color-light-grey-4;
+    border-bottom: 1px solid $color-light-grey-4;
+  }
+
+  .td {
+    min-height: 46px;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    line-height: 1;
+    border-bottom: 1px solid $color-light-grey-4;
+  }
+
+  .td-label {
+    width: 183px;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    background: $color-light-grey-3;
+    color: $color-grey-2;
+  }
+
+  .value {
+    width: calc(100% - 183px);
+    padding: 16px;
+    color: $color-paragraph-black;
+    min-height: 46px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 1;
+    justify-content: space-between;
+
+    word-break: break-all;
+    white-space: pre-wrap;
+    a {
+      color: $color-primary;
+    }
+  }
+
+  span {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1;
+    margin-left: 4px;
+    color: $color-paragraph-black;
+  }
+}

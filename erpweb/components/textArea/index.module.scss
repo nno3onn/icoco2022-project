@@ -1,0 +1,18 @@
+@import '/styles/color.scss';
+
+.textarea-wrapper {
+  width: 100%;
+  padding: 16px;
+  background-color: $color-light-grey-3;
+  border: 1px solid #ecebf2;
+  resize: none;
+  font-size: 14px;
+  line-height: 1;
+  color: $color-paragraph-black;
+  cursor: text;
+  overflow-y: auto;
+
+  &::placeholder {
+    color: #bbb;
+  }
+}
